@@ -1,0 +1,27 @@
+body {
+	padding-top: 30px;
+	background-image: url("nytimes.jpg");
+	width: 900px;
+	margin:0 auto;
+}
+
+footer img {
+	box-shadow: 7px 7px 3px #888888;
+}
+
+footer {
+	padding-bottom: 20px;
+}
+
+.jumbotron {
+	text-shadow: 2px 2px 4px #9DA2A3;
+	border-radius: 10px;
+	text-align: center;
+	background: #337ab7;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.panel {
+	box-shadow: 10px 10px 5px #888888;
+
+}
