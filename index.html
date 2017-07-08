@@ -1,97 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-	<!-- Tab Label -->
-	<title>New York Times Search</title>
+    <!-- Tab Label -->
+    <title>New York Times Search</title>
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	
-	<!-- Link to font awesome for icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<!-- Link to css style sheet -->
-	<link rel="stylesheet" type="text/css" href="assets/css/times.css">
+    <!-- Link to font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link to css style sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
+
 <body>
 
-	<!-- Page heading with image -->
-	<div class="jumbotron">
-		<h1><img src="assets/images/news.png">New York Times Search</h1>
-		<!-- Form header -->
-	</div>
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h3 class="panel-title"></i>Search Parameters</h3>
-		</div>
-		<div class="panel-body">
+    <!-- Page heading with image -->
+    <div class="jumbotron">
+        <h1><img src="assets/images/news.png">New York Times Search</h1>
+        <!-- Form header -->
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                </i>Search Parameters</h3>
+        </div>
+        <div class="panel-body">
 
-			<!-- Form for user inputs -->
-			<form id = "wrapper">
-				<!-- Search data entry -->
-				<div class="form-group">
-					<label for="search">Search Term:</label>
-					<input type="text" class="form-control" id="search-term" placeholder="">
-				</div>
-				<!-- Number of results dropdown -->
-				<div class="form-group">
-					<label for="pwd">Number of Records to Retrieve:</label>
-					<select class="form-control" id="num-records-select">
+            <!-- Form for user inputs -->
+            <form id="wrapper">
+                <!-- Search data entry -->
+                <div class="form-group">
+                    <label for="search">Search Term:</label>
+                    <input type="text" class="form-control" id="search-term" placeholder="">
+                </div>
+                <!-- Number of results dropdown -->
+                <div class="form-group">
+                    <label for="pwd">Number of Records to Retrieve:</label>
+                    <select class="form-control" id="num-records-select">
 						<option value="1">1</option>
 						<option value="5" selected="5">5</option>
 						<option value="10">10</option>
 					</select>
-				</div>
-				<!-- Search start year -->
-				<div class="form-group">
-					<label for="start-year">Start Year (Optional):</label>
-					<input type="year" class="form-control" id="start-year" placeholder="">
-				</div>
-				<!-- Search end year -->
-				<div class="form-group">
-					<label for="end-year">End Year:</label>
-					<input type="year" class="form-control" id="end-year" placeholder="">
-				</div>
+                </div>
+                <!-- Search start year -->
+                <div class="form-group">
+                    <label for="start-year">Start Year (Optional):</label>
+                    <input type="year" class="form-control" id="start-year" placeholder="">
+                </div>
+                <!-- Search end year -->
+                <div class="form-group">
+                    <label for="end-year">End Year:</label>
+                    <input type="year" class="form-control" id="end-year" placeholder="">
+                </div>
 
-				<!-- User buttons to start search of API and Clear -->
-				<div id=buttonInline>
-					<a href ="#article-well" type="submit" class="btn btn-default" id = "run-search" ><i class="fa fa-search"></i>Search</a>
-					
-					<button type="clear" class="btn btn-default" id = "clear-all"><i class="fa fa-trash"></i>Clear</button>
-				</div>
-			</div>
-		</form>
-		<!-- Area to show users search results from API -->
-	</div>
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h3 class="panel-title"></i>Search Results</h3>
-		</div>
+                <!-- User buttons to start search of API and Clear -->
+                <div id=buttonInline>
+                    <a href="#article-well" type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i>Search</a>
 
-		<div id = "well-section" class="panel-body">
-			<div class="well">
-			</div>
-		</div>
+                    <button type="clear" class="btn btn-default" id="clear-all"><i class="fa fa-trash"></i>Clear</button>
+                </div>
+        </div>
+        </form>
+        <!-- Area to show users search results from API -->
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                </i>Search Results</h3>
+        </div>
 
-	</div>
+        <div id="well-section" class="panel-body">
+            <div class="well">
+            </div>
+        </div>
 
-	<footer><img src="assets/images/timesAPI.png"></footer>
-	
-	<!-- jQuery script -->
-	<script src="https://code.jquery.com/jquery.js"></script>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </div>
 
-	<!-- Link to JS sheet -->
-	<script type="text/javascript" src ="assets/js/times.js"></script>
+    <footer><img src="assets/images/timesAPI.png"></footer>
+
+    <!-- jQuery script -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Link to JS sheet -->
+    <script type="text/javascript" src="assets/js/times.js"></script>
 
 </body>
+
 </html>
