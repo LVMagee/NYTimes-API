@@ -1,6 +1,6 @@
 # NYTimes-API
 
-![Image of Finished Shot](https://github.com/LVMagee/NYTimes-API/blob/master/assets/images/NYTimes.png)
+![Image of screen shot](https://github.com/LVMagee/NYTimes-API/blob/master/assets/images/NYTimes.png)
 
 
 
